@@ -23,6 +23,7 @@ const ServiceCard = ({ index, title, icon }) => (
 const Hero = () => {
   return (
     <>
+    <div className="heroes">
       <motion.div variants={textVariant()}>
         <h2 className="font-err">IIMT</h2>
         <h2 className="hell">Presents</h2>
@@ -43,6 +44,8 @@ const Hero = () => {
       </div>
         
       </motion.p>
+    </div>
+      
 
 
      

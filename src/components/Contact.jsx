@@ -87,11 +87,11 @@ const Contact = () => {
         <h3 className='joke'> </h3>
         <div className='joke'>
       <CallIcon style={{ fontSize: '2rem' }}/>
-      <span >+91 7302254559</span>
+      <span >+91 12345677</span>
     </div>
     <div className='joke'>
       <CallIcon style={{ fontSize: '2rem' }}/>
-      <span >+91 8058659197</span>
+      <span >+91 12345677</span>
     </div>
     <div class="w-full h-[1px] bg-gray-400 my-4"></div>
                     <div class="flex flex-wrap gap-4 justify-between items-center">

@@ -15,18 +15,14 @@ import { textVariant } from "../utils/motion";
 const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
+      className="vertical-timeline-element--work" // Add a custom class for styling
       contentStyle={{
         background: "#1d1836",
         color: "#fff",
+        boxShadow: "0 0 20px rgba(0, 0, 0, 0.3)", // Add a box shadow for 3D effect
       }}
-      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+      contentArrowStyle={{ borderRight: "7px solid #232631" }}
       date={experience.date}
-      // iconStyle={{ background: experience.iconBg }}
-      // // icon={
-      // //   <div className='flex justify-center items-center w-full h-full'>
-         
-      // //   </div>
-      // // }
     >
       <div>
         <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
@@ -55,14 +51,14 @@ const ExperienceCard = ({ experience }) => {
 const Experience = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div className="timeline" variants={textVariant()}>
         <h2 className="font-link">
           Timeline
         </h2>
       </motion.div>
 
       <div className='mt-20 flex flex-col'>
-        <VerticalTimeline>
+        <VerticalTimeline layout="1-column">
           {experiences.map((experience, index) => (
             <ExperienceCard
               key={`experience-${index}`}

@@ -14,15 +14,31 @@
 }
 
 .font-link {
-  font-family:'Dekko';
+  font-family: 'Dekko', cursive;
   text-align: center;
-  font-size: 70px
+  font-size: 70px;
+  letter-spacing: .1em;
+  color: #8e3368;
+  text-shadow: 2px 2px 0 #ff0000, 4px 4px 0 #6cff03ec; /* Adjust the colors and values as needed */
+  transform: rotate(-5deg) skew(-5deg);
 }
+
+
 .link {
   font-family:'Dekko';
   color: #2f80ed;
   text-align: left;
   font-size: 30px
+}
+.iimt{
+  background-image: url("/public/bg.png");
+}
+
+.navbar{
+  background-color: #9e939328;
+  border-radius: 30px;
+  backdrop-filter: blur(3px);
+  height: 10vh;
 }
 .linkk {
   font-family:'Dekko';

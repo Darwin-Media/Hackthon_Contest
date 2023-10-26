@@ -1,22 +1,44 @@
+import React, { useState, useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
-
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Works, StarsCanvas } from "./components";
+
 const App = () => {
+  const [bgColor, setBgColor] = useState('white'); // Initially set to white
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+  console.log(scrollY); 
+
+      if (scrollY >= 500) {
+        setBgColor('black');
+      } else {
+        setBgColor('white');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <BrowserRouter>
-      <div className='relative z-0 bg-primary'>
-        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
-        <StarsCanvas />
-          <Navbar />
-          <Hero />
-        </div>
-        <About />
-        <Experience />
-        <Works />
-        <Feedbacks />
-        <div className='relative z-0'>
-          <Contact />
-          <StarsCanvas />
+      <div className="app-container">
+        <div className={`relative z-0 bg-${bgColor} transition-background`}>
+          <div className='bg-hero-pattern bg-cover bg-no-repeat iimt  bg-center'>
+            <Navbar />
+            <Hero />
+          </div>
+          <About />
+          <Works />
+          <Experience />
+          <Feedbacks />
+          <div className='relative z-0'>
+            <Contact />
+          </div>
         </div>
       </div>
     </BrowserRouter>
