@@ -24,15 +24,14 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className='w-full border-only w-full   p-[1px] rounded-[20px] shadow-card'
+        className='w-full border-only w-full  p-[1px] rounded-[20px] shadow-card'
       >
-        <div className='relative w-full h-[20px]'>
+        <div className='relative w-full h-full'>
 
         </div>
 
         <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+          <h3 className='text-white font-bold p-5 text-[30px]'>{name}</h3>
         </div>
 
         <div className='mt-4 flex flex-wrap gap-2'>
