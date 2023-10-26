@@ -26,9 +26,9 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <div className="app-container">
+      <div className="app-container overflow-hidden">
         <div className={`relative z-0 bg-${bgColor} transition-background`}>
-          <div className='bg-hero-pattern bg-cover bg-no-repeat iimt  bg-center'>
+          <div className='bg-hero-pattern bg-cover bg-no-repeat iimt overflow-hidden  bg-center'>
             <Navbar />
             <Hero />
           </div>
