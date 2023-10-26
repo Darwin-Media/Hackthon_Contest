@@ -23,6 +23,11 @@
   transform: rotate(-5deg) skew(-5deg);
 }
 
+.border-only {
+  border: 3px solid rgb(17, 16, 64); /* Set your desired border color */
+  background-color: transparent; /* Set the background to transparent */
+}
+
 
 .link {
   font-family:'Dekko';
@@ -31,9 +36,12 @@
   font-size: 30px
 }
 .iimt{
-  background-image: url("/public/bg.png");
+  background-image: url("/bg.png");
 }
-
+.whitess{
+  border: 4px solid rgb(49, 4, 54); /* Set your desired border color */
+  border-radius: 4px;
+}
 .navbar{
   background-color: #9e939328;
   border-radius: 30px;
@@ -41,11 +49,10 @@
   height: 10vh;
 }
 .linkk {
-  font-family:'Dekko';
-  color: #2f80ed;
+  color: #00cea8;
+  font-weight: bolder;
   text-align: center;
   align-items: center;
-  font-size: 30px
 
 }
 .joke {

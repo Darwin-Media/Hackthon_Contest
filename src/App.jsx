@@ -10,10 +10,10 @@ const App = () => {
       const scrollY = window.scrollY;
   console.log(scrollY); 
 
-      if (scrollY >= 500) {
+      if (scrollY >= 900) {
         setBgColor('black');
       } else {
-        setBgColor('white');
+        setBgColor('primary');
       }
     };
 
@@ -32,7 +32,8 @@ const App = () => {
             <Navbar />
             <Hero />
           </div>
-          <About />
+         
+          <div className="whitess"> <About /></div>
           <Works />
           <Experience />
           <Feedbacks />

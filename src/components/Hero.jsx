@@ -36,7 +36,7 @@ const Hero = () => {
       <p className="helll">MIND INSTALLERS</p>
       <p className="hellll">HACKTHON 2K23</p>
       <p className="h">EXPLORE.   CREATE.   INNOVATE</p>
-      <div className="linkk" >
+      <div className="linkk text-[40px]" >
       <Button  href="https://forms.gle/JfVEDRFuUzeqX73h6" target="_blank" variant="outlined">Register Now</Button>
       </div>
       <div className="linkk" >
