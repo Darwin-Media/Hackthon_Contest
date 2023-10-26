@@ -12,11 +12,11 @@ const FeedbackCard = ({
 }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
-    className='bg-tertiary border-only rounded-[20px] py-5 px-12 min-h-[80px] flex justify-evenly items-center flex-col'
+    className='bg-tertiary border-only rounded-[20px]  min-h-[80px] min-w-[33vh] p-8 sm:w-full flex relative left-[-5vh] justify-between items-center flex-col'
   >
 
     <div className='mt-1'>
-      <p className='text-white tracking-wider items-start text-[25px]'>{testimonial}</p>
+      <p className='text-white tracking-wider items-start text-[15px]  sm:text-[25px]'>{testimonial}</p>
 
       <div className='mt-7 flex justify-between items-center gap-1'>
         <div className='flex-1 flex flex-col'>
